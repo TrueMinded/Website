@@ -11,50 +11,46 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
 	<body>
 
 		<!-- Header -->
-			<header id="header" style="margin-bottom: 50px;">
-				<img class="logo" src="images/orangewhitelogo.png" alt="">
-				<a href="index.html" ></a>
-				<nav>
-					<a href="#menu">Menu</a>
-				</nav>
-			</header>
-
+		<header id="header">
+			<a href="index.html" class="logo" ><img src="images/orangewhitelogo.png" alt=""></a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Services</a></li>
-					<li><a href="elements.html">Blog</a></li>
+					<li><a href="elements.html">Services</a></li>
+					<li><a href="blog.html">Blog</a></li>
 				</ul>
 			</nav>
 		<!--Carousel-->	
-		<div class="carousel">
-			<ul>
-				<li>
-					<div class="carousel-container">
-						<img src="images/pic09.jpg" alt="">
-					</div>
-				</li>
-				<li>
-					<div class="carousel-conainer">
-						<img src="images/pic03.jpg" alt="">
-					</div>
-				</li>
-				<li>
-					<div class="carousel-container">
-						<img src="images/pic04.jpg" alt="">
-					</div>
-				</li>
-				<li>
-					<div class="carousel-container">
-						<img src="images/pic07.jpg" alt="">
-					</div>
-				</li>
-			</ul>
+		<div class="wrap">
+			<div id="arrow-left" class="arrow"></div>
+			<div id="slider">
+			  <div class="slide slide1">
+				<div class="slide-content">
+				  <span>Image One</span>
+				</div>
+			  </div>
+			  <div class="slide slide2">
+				<div class="slide-content">
+				  <span>Image Two</span>
+				</div>
+			  </div>
+			  <div class="slide slide3">
+				<div class="slide-content">
+				  <span>Image Three</span>
+				</div>
+			  </div>
+			</div>
+			<div id="arrow-right" class="arrow"></div>
 		</div>
 		<!-- Banner -->
 
@@ -76,12 +72,12 @@
 				<div class="content">
 					<div class="inner">
 						<header>
-							<h2><a href="generic.html">Ipsum lorem sed magna</a></h2>
+							<h2><a href="blog.html">Ipsum lorem sed magna</a></h2>
 							<p class="info">3 days ago by <a href="#">Jane Doe</a></p>
 						</header>
 						<p>Nullam posuere erat vel placerat rutrum. Praesent ac consectetur dui, et congue quam. Donec aliquam lacinia condimentum. Integer porta massa sapien, commodo sodales diam suscipit vitae. Aliquam quis felis sed urna semper semper. Phasellus eu scelerisque mi. Vivamus aliquam nisl libero, sit amet scelerisque ligula laoreet vel.</p>
 						<ul class="actions">
-							<li><a href="generic.html" class="button alt">Read More</a></li>
+							<li><a href="blog.html" class="button alt">Read More</a></li>
 						</ul>
 					</div>
 					<div class="postnav">
@@ -99,12 +95,12 @@
 				<div class="content">
 					<div class="inner">
 						<header>
-							<h2><a href="generic.html">Donec ex risus mollis</a></h2>
+							<h2><a href="blog.html">Donec ex risus mollis</a></h2>
 							<p class="info">3 days ago by <a href="#">Jane Doe</a></p>
 						</header>
 						<p>Nullam posuere erat vel placerat rutrum. Praesent ac consectetur dui, et congue quam. Donec aliquam lacinia condimentum. Integer porta massa sapien, commodo sodales diam suscipit vitae. Aliquam quis felis sed urna semper semper. Phasellus eu scelerisque mi. Vivamus aliquam nisl libero, sit amet scelerisque ligula laoreet vel.</p>
 						<ul class="actions">
-							<li><a href="generic.html" class="button alt">Read More</a></li>
+							<li><a href="blog.html" class="button alt">Read More</a></li>
 						</ul>
 					</div>
 					<div class="postnav">
@@ -122,12 +118,12 @@
 				<div class="content">
 					<div class="inner">
 						<header>
-							<h2><a href="generic.html">Sed tempus interdum</a></h2>
+							<h2><a href="blog.html">Sed tempus interdum</a></h2>
 							<p class="info">3 days ago by <a href="#">Jane Doe</a></p>
 						</header>
 						<p>Nullam posuere erat vel placerat rutrum. Praesent ac consectetur dui, et congue quam. Donec aliquam lacinia condimentum. Integer porta massa sapien, commodo sodales diam suscipit vitae. Aliquam quis felis sed urna semper semper. Phasellus eu scelerisque mi. Vivamus aliquam nisl libero, sit amet scelerisque ligula laoreet vel.</p>
 						<ul class="actions">
-							<li><a href="generic.html" class="button alt">Read More</a></li>
+							<li><a href="blog.html" class="button alt">Read More</a></li>
 						</ul>
 					</div>
 					<div class="postnav">
@@ -145,12 +141,12 @@
 				<div class="content">
 					<div class="inner">
 						<header>
-							<h2><a href="generic.html">Adipiscing sed urna</a></h2>
+							<h2><a href="blog.html">Adipiscing sed urna</a></h2>
 							<p class="info">3 days ago by <a href="#">Jane Doe</a></p>
 						</header>
 						<p>Nullam posuere erat vel placerat rutrum. Praesent ac consectetur dui, et congue quam. Donec aliquam lacinia condimentum. Integer porta massa sapien, commodo sodales diam suscipit vitae. Aliquam quis felis sed urna semper semper. Phasellus eu scelerisque mi. Vivamus aliquam nisl libero, sit amet scelerisque ligula laoreet vel.</p>
 						<ul class="actions">
-							<li><a href="generic.html" class="button alt">Read More</a></li>
+							<li><a href="blog.html" class="button alt">Read More</a></li>
 						</ul>
 					</div>
 					<div class="postnav">
@@ -168,12 +164,12 @@
 				<div class="content">
 					<div class="inner">
 						<header>
-							<h2><a href="generic.html">Interdum et rutrum</a></h2>
+							<h2><a href="blog.html">Interdum et rutrum</a></h2>
 							<p class="info">3 days ago by <a href="#">Jane Doe</a></p>
 						</header>
 						<p>Nullam posuere erat vel placerat rutrum. Praesent ac consectetur dui, et congue quam. Donec aliquam lacinia condimentum. Integer porta massa sapien, commodo sodales diam suscipit vitae. Aliquam quis felis sed urna semper semper. Phasellus eu scelerisque mi. Vivamus aliquam nisl libero, sit amet scelerisque ligula laoreet vel.</p>
 						<ul class="actions">
-							<li><a href="generic.html" class="button alt">Read More</a></li>
+							<li><a href="blog.html" class="button alt">Read More</a></li>
 						</ul>
 					</div>
 					<div class="postnav">
@@ -191,12 +187,12 @@
 				<div class="content">
 					<div class="inner">
 						<header>
-							<h2><a href="generic.html">Magna porta aliquam</a></h2>
+							<h2><a href="blog.html">Magna porta aliquam</a></h2>
 							<p class="info">3 days ago by <a href="#">Jane Doe</a></p>
 						</header>
 						<p>Nullam posuere erat vel placerat rutrum. Praesent ac consectetur dui, et congue quam. Donec aliquam lacinia condimentum. Integer porta massa sapien, commodo sodales diam suscipit vitae. Aliquam quis felis sed urna semper semper. Phasellus eu scelerisque mi. Vivamus aliquam nisl libero, sit amet scelerisque ligula laoreet vel.</p>
 						<ul class="actions">
-							<li><a href="generic.html" class="button alt">Read More</a></li>
+							<li><a href="blog.html" class="button alt">Read More</a></li>
 						</ul>
 					</div>
 					<div class="postnav">
@@ -216,7 +212,7 @@
 				</ul>
 				<ul class="icons">
 					<li><a href="#" class=""><span class="">Services</span></a></li>
-					<li><a href="#" class=""><span class="">Blog</span></a></li>
+					<li><a href="blog.html" class=""><span class="">Blog</span></a></li>
 					<li><a href="#" class=""><span class="">Terms & Conditions</span></a></li>
 				</ul>
 				<div class="copyright">
@@ -230,6 +226,6 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/slider.js"></script>
 	</body>
 </html>

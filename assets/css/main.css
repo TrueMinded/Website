@@ -19,7 +19,7 @@
 		vertical-align: baseline;
 	}
 
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu,  section {
+	article, aside, details, figcaption, figure,ul, footer, header, hgroup, menu,  section {
 		display: block;
 	}
 	
@@ -217,52 +217,76 @@
 	}
 /*Carousel*/
 
-	.carousel{
-		position: absolute;
-		width: 600px;
-		margin: auto;
-		overflow: hidden;
-		margin-top: 100px;
-		box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-	}
-	.carousel li{
-		display: inline-block;
-		height: 300px;
-		float: left;
-		position: relative;
-		width: 600px;
-	}
-	.carousel ul{
-		position: absolute;
-		list-style: none;
-		margin-left: -50px;
-		transition: left 0.3s linear;
-	}
-	.carousel-container{
-		margin: 0 auto;
-		padding: 0;
-		width: 600px;
-	}
-	.carousel-container img{
-		width: 100%;
- 		padding: 0 10px;
-	}
-	.carousel ul{
-		animation: slide 15s infinite;
-	}
-	.carousel ul:hover{
-		animation-play-state: paused;
-	}
-	@keyframes slide{
-		20% { left: 0; }
-		25% { left: -600px; }
-		45% { left: -600px; }
-		50% { left: -1200px;}
-		70% { left: -1200px; }
-		75% { left: -1800px; }
-		98% { left: -1800px; }
-		100% { left: 0; }
-	}
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 70vh;
+/*   overflow-x: hidden; */
+/*   overflow-y: hidden; */
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("../../images/pic01.jpg");
+}
+
+.slide2 {
+  background-image: url("../../images/pic02.jpg");
+}
+
+.slide3 {
+  background-image: url("../../images/pic03.jpg");
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #f18306 transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #f18306;
+  right: 0;
+  margin-right: 30px;
+}
 /* Grid */
 
 	.row {
@@ -4565,7 +4589,7 @@
 /* Footer */
 
 	#footer {
-		padding: 4em 0 2em 0;
+		padding: 1em 0 1em 0;
 		background: #1c1c1c;
 		text-align: center;
 	}
